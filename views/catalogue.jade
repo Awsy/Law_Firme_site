@@ -1,0 +1,80 @@
+- var service_object = obj;
+
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Catalogue
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/materialize.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='js/jquery-ui-1.12.1.custom/jquery-ui.js')
+    script(src='js/js.js')
+
+  body#catalogue_body
+    .wrapper
+      .upper
+        .container
+          .left
+            .logo
+              img(src='', alt='')
+          .right
+            .right_up
+              .right_up_lang
+                .ain
+                  a(href='') Рус
+                  a(href='') Укр
+              .right_up_number
+                p +3805729085
+                p +3805939138
+            .right_down
+              ul.nav
+                li
+                  a(href='/faq') Вопрос-Ответ
+                li
+                  a(href='/about') О Нас
+                li
+                  a(href='/contact') Контакты
+                li
+                  a(href='/catalogue') Услуги
+                li
+                  a(href='/') Главная
+    h2.catalogue_subject
+      Наши Услуги
+
+    hr
+
+
+    .menu
+      - for(let k=0; k< service_object.length;k++){
+        a(href='/catalogue/'+k)
+          div(style='background-image: url(img/1.jpg)' data-id= k).service
+
+
+
+            h6.cat_text= service_object[k].title
+            p.cat_text2= service_object[k].article
+      -}
+
+    .fixed-action-btn.horizontal.click-to-toggle
+          a.btn-floating.btn-large.red
+            i.material-icons phone
+          ul
+            li
+              a.btn-floating.red
+                i.material-icons insert_chart
+            li
+              a.btn-floating.yellow.darken-1
+                i.material-icons format_quote
+            li
+              a.btn-floating.green
+                i.material-icons publish
+            li
+              a.btn-floating.blue
+                i.material-icons attach_file
+    footer#down_side
+      p @ All Rights Reserved 2017
+    script(src='js/materialize.js')
+    script(src='js/js.js')

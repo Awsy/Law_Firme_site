@@ -1,0 +1,102 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/materialize.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='js/jquery-ui-1.12.1.custom/jquery-ui.js')
+    script(src='app.js')
+  body
+    .wrapper
+      .upper
+        .container
+          .left
+            .logo
+              img(src='', alt='')
+          .right
+            .right_up
+              .right_up_lang
+                .ain
+                  a(href='') Рус
+                  a(href='') Укр
+              .right_up_number
+                p +3805729085
+                p +3805939138
+            .right_down
+              ul.nav
+                li
+                  a(href='/faq') Вопрос-Ответ
+                li
+                  a(href='/about') О Нас
+                li
+                  a(href='/contact') Контакты
+                li
+                  a(href='/catalogue') Услуги
+                li
+                  a(href='/') Главная
+      .carousel.carousel-slider.center.carusel_main(data-indicators='true')
+        .carousel-fixed-item.center
+          a.btn.waves-effect.white.grey-text.darken-text-2 button
+        .carousel-item.red.white-text(href='#one!')
+          h2 First Panel
+          p.white-text This is your first panel
+        .carousel-item.amber.white-text(href='#two!')
+          h2 Second Panel
+          p.white-text This is your second panel
+        .carousel-item.green.white-text(href='#three!')
+          h2 Third Panel
+          p.white-text This is your third panel
+        .carousel-item.blue.white-text(href='#four!' data-link="/tttt")
+          h2 Fourth Panel
+          p.white-text This is your fourth panel
+      .container
+        .row
+          .grid-example.col.s12.m12.l4.xl4
+            .slide_block
+              .toggler
+                .effect
+                  h3.ui-widget-header.ui-corner-all Show
+                  p
+                    | Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+          .grid-example.col.s12.m12.l4.l4
+            .slide_block
+              .toggler
+                .effect
+                  h3.ui-widget-header.ui-corner-all Show
+                  p
+                    | Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+          .grid-example.col.s12.m12.l4.l4
+            .slide_block
+              .toggler
+                .effect
+                  h3.ui-widget-header.ui-corner-all Show
+                  p
+                    | Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+      br
+      .container.plot_details
+        .plot
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet itaque maiores nulla recusandae? Laudantium nobis, sit? Accusamus aliquid at cumque cupiditate deleniti dolor ea earum eius est eum exercitationem incidunt ipsa iste iure maxime, molestias natus omnis quaerat quisquam rerum sapiente soluta tenetur totam vel velit vero voluptatibus.Quisquam.
+          .fixed-action-btn.horizontal.click-to-toggle
+            a.btn-floating.btn-large.red
+              i.material-icons phone
+            ul
+              li
+                a.btn-floating.red
+                  i.material-icons insert_chart
+              li
+                a.btn-floating.yellow.darken-1
+                  i.material-icons format_quote
+              li
+                a.btn-floating.green
+                  i.material-icons publish
+              li
+                a.btn-floating.blue
+                  i.material-icons attach_file
+      footer#down_side
+        p @ All Rights Reserved 2017
+    script(src='js/materialize.js')
+    script(src='js/js.js')

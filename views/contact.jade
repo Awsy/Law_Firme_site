@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title contact
+    link(rel='stylesheet', href='../css/style.css')
+    link(rel='stylesheet', href='../css/materialize.css')
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='../js/jquery-ui-1.12.1.custom/jquery-ui.js')
+
+  body#contact_body
+    .wrapper
+      .upper
+        .container
+          .left
+            .logo
+              img(src='', alt='')
+          .right
+            .right_up
+              .right_up_lang
+                .ain
+                  a(href='') Рус
+                  a(href='') Укр
+              .right_up_number
+                p +3805729085
+                p +3805939138
+            .right_down
+              ul.nav
+                li
+                  a(href='/faq') Вопрос-Ответ
+                li
+                  a(href='/about') О Нас
+                li
+                  a(href='/contact') Контакты
+                li
+                  a(href='/catalogue') Услуги
+                li
+                  a(href='/') Главная
+    h2.contact_subject Контакты
+    hr
+    .contacts
+      p
+        | Name:
+        span.contact_info Юрист
+      p
+        | Contact Numbers:
+        span.contact_info +380695111888
+      p
+        | Address:
+        span.contact_info Киев, ул.12
+      #contact_underline
+      input(type='text', placeholder='Имя')
+      br
+      input(type='text', placeholder='Фамилия')
+      br
+      input(type='number', placeholder='Телефон')
+      br
+      input#commentarea(type='textarea', placeholder='Комментарий')
+      br
+      br
+      input(type='submit', value='Отправить')
+
+      .fixed-action-btn.horizontal.click-to-toggle
+        a.btn-floating.btn-large.red
+          i.material-icons phone
+        ul
+          li
+            a.btn-floating.red
+              i.material-icons insert_chart
+          li
+            a.btn-floating.yellow.darken-1
+              i.material-icons format_quote
+          li
+            a.btn-floating.green
+              i.material-icons publish
+          li
+            a.btn-floating.blue
+              i.material-icons attach_file
+    footer#down_side
+      p @ All Rights Reserved 2017
+    script(src='../js/materialize.js')
+    script(src='../js/js.js')
