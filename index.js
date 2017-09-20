@@ -1,7 +1,8 @@
 var express = require("express");
 var app = express();
 var fs = require("fs");
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
+
 
 app.set('views', './views');
 app.set('view engine', 'jade');
@@ -18,6 +19,15 @@ var routes = {
     "/contact": "contact",
     "/catalogue/:id": "catalog_template"
 }
+
+
+app.post('/form', function(req,res){
+
+    console.log(req.body);
+
+    res.end("request received");
+
+});
 
 for (let key in routes) {
 
@@ -62,3 +72,6 @@ for (let key in routes) {
 }
 
 app.listen(3000)
+
+
+

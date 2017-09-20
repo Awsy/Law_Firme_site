@@ -42,24 +42,24 @@ html(lang='en')
     .contacts
       p
         | Name:
-        span.contact_info Юрист
+        span.contact_info  Юрист
       p
         | Contact Numbers:
-        span.contact_info +380695111888
+        span.contact_info  +380695111888
       p
         | Address:
-        span.contact_info Киев, ул.12
+        span.contact_info  Киев, ул.Крещатик 12
       #contact_underline
-      input(type='text', placeholder='Имя')
+      input(type='text', placeholder='Имя', id='name')
       br
-      input(type='text', placeholder='Фамилия')
+      input(type='text', placeholder='Фамилия', id='surname')
       br
-      input(type='number', placeholder='Телефон')
+      input(type='number', placeholder='Телефон', id='num')
       br
-      input#commentarea(type='textarea', placeholder='Комментарий')
+      input(type='textarea', placeholder='Комментарий', id='comments')
       br
       br
-      input(type='submit', value='Отправить')
+      input(type='submit', value='Отправить' id='press')
 
       .fixed-action-btn.horizontal.click-to-toggle
         a.btn-floating.btn-large.red
