@@ -40,10 +40,10 @@ html(lang="en")
         h1.catalogue_subject service
         hr
         - var object = obj
-        h2= object.title
-        p= object.article
+        h2.catalog_title= object.title
+        p.catalog_content= object.article
 
-        a(href = "/") Услуга
+        a(href = "/")
 
 
             .fixed-action-btn.horizontal.click-to-toggle

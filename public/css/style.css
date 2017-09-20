@@ -148,6 +148,46 @@ img {
 }
 
 
+/*----slides-----*/
+
+.slide_first{
+
+    background-image: url("http://smarthardmoney.com/wp-content/uploads/2016/08/Private-Money-Loans-for-Real-Estate-Investing.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide_second{
+
+    background-image: url("http://csjosethomas.com/Content/img/1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide_three{
+
+    background-image: url("https://www.cspa.org/wp-content/uploads/2015/09/court.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide_four{
+
+    background-image: url("https://blog.smartbizloans.com/wp-content/uploads/BusinessPartnershipsSuccess-800x350.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.slide_text{
+    color: #007774;
+    font-family: "Arial Hebrew";
+}
+
 /*----*/
 
 .content {
@@ -179,6 +219,8 @@ img {
     background-color: #880e4f;
     color: whitesmoke;
     text-align: center;
+    font-size: 20px;
+    font-family: SansSerif;
 }
 
 .press {
@@ -214,11 +256,12 @@ img {
 
 .about_text {
     min-height: 450px;
-    color: #0a0a1e;
+    color: #188f5d;
 }
 
 .about_title {
     text-align: center;
+    color: #289579;
 }
 
 
@@ -282,8 +325,6 @@ img {
     width: 200px;
     height: 120px;
     border: 1px solid;
-    /*margin-left: 9%;*/
-    /*margin-top: 2%;*/
     background-color: #18ffff;
     background-size: cover;
     background-position: center;
@@ -298,19 +339,26 @@ img {
 }
 
 
-/*.cat_text2{*/
-
-
-/*text-align: center;*/
-
-
-/*}*/
-
-
 /*--------service_menu------*/
 
 .service_menu {
     align-content: center;
     min-height: 150px;
     text-align: center;
+}
+
+.catalog_title{
+
+    text-align: center;
+    color: #05c47e;
+    font-family: Baghdad;
+}
+
+.catalog_content{
+
+    text-align: center;
+    min-height: 240px;
+    font-family: Baghdad;
+    color: #6f6e69;
+    font-size: 20px;
 }

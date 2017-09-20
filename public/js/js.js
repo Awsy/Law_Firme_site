@@ -35,7 +35,7 @@ $( function() {
      $('.carousel').carousel('next');
 
 
- }, 4000);
+ }, 5000);
 
 
 
@@ -43,10 +43,10 @@ $( function() {
  
      $('.collapsible').collapsible();
 
-    $('.indicator-item').eq(0).attr('loc_slide', '/catalogue/7');
+    $('.indicator-item').eq(0).attr('loc_slide', '/catalogue/0');
     $('.indicator-item').eq(1).attr('loc_slide', '/catalogue/2');
     $('.indicator-item').eq(2).attr('loc_slide', '/catalogue/3');
-    $('.indicator-item').eq(3).attr('loc_slide', '/catalogue/4');
+    $('.indicator-item').eq(3).attr('loc_slide', '/catalogue/5');
 
  });
 
