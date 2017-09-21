@@ -5,10 +5,6 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 
-/*-----feedback(contact) form-----*/
-
-
-
 /*---------*/
 app.set('views', './views');
 app.set('view engine', 'jade');
@@ -26,7 +22,7 @@ var routes = {
     "/catalogue/:id": "catalog_template"
 }
 
-
+/*-----feedback(contact) form-----*/
 app.post('/form', function(req,res){
     if (req.body.name!="" && req.body.surname!="" && req.body.num!=""){
 
@@ -59,6 +55,7 @@ app.post('/form', function(req,res){
 
 });
 
+/*----------------*/
 
 for (let key in routes) {
 
