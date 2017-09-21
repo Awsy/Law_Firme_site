@@ -2,8 +2,14 @@ var express = require("express");
 var app = express();
 var fs = require("fs");
 var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
 
 
+/*-----feedback(contact) form-----*/
+
+
+
+/*---------*/
 app.set('views', './views');
 app.set('view engine', 'jade');
 
@@ -22,12 +28,37 @@ var routes = {
 
 
 app.post('/form', function(req,res){
+    if (req.body.name!="" && req.body.surname!="" && req.body.num!=""){
 
-    console.log(req.body);
+        var transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'bootcamp0513@gmail.com',
+                pass: 'asdfgh89'
+            }
+        });
 
-    res.end("request received");
+        var mailOptions = {
+            from: 'bootcamp0513@gmail.com',
+            to: 'aws.shkara89@gmail.com',
+            subject: 'Добро Пожаловать в Нашу Компанию "Столичный Юрист"',
+            text: (req.body.name + " " +req.body.surname + " " +req.body.num + " " +req.body.comments)
+        };
+
+        transporter.sendMail(mailOptions, function(error, info){
+            if (error) {
+                console.log(error);
+            } else {
+                console.log('Сообщение Отправлено: ' + info.response);
+            }
+        });
+        res.end(' Ваш Запрос Отправлен. Наш Менеджер с вами свяжится в Ближайшее Время')
+
+
+    }else{res.end(" Please Insert Data")}
 
 });
+
 
 for (let key in routes) {
 

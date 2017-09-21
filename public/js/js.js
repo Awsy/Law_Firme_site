@@ -63,13 +63,15 @@ $(function () {
 
 $('#press').on('click', function(){
     var dannix = {};
-    dannix.name = $('#name').val();
-    dannix.surname = $('#surname').val();
-    dannix.num = $('#num').val();
-    dannix.comments = $('#comments').val();
+    dannix.name = $('#name').val().trim();
+    dannix.surname = $('#surname').val().trim();
+    dannix.num = $('#num').val().trim();
+    dannix.comments = $('#comments').val().trim();
    $.post('/form', dannix, function (responsive) {
 
        console.log(responsive);
+       $("#warning").html(responsive);
+
 
    })
 });
