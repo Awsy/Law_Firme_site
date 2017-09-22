@@ -35,9 +35,6 @@ $( function() {
 
  }, 5000);
 
-
-
-
  
      $('.collapsible').collapsible();
 
@@ -55,7 +52,6 @@ $(function () {
         }
 
     })
-});
 
 /*-------contact section------*/
 
@@ -75,5 +71,7 @@ $('#press').on('click', function(){
 });
 
 
+
+});
 
 

@@ -185,7 +185,7 @@ img {
 
 
 .slide_text{
-    color: #cf12e5;
+    color: #e912ff;
     font-family: "Arial Hebrew";
     font-size: 20px;
     margin-top: 50px;
@@ -214,6 +214,7 @@ img {
 }
 .effect {
     height:130px;
+    text-align: center;
 }
 
 .plot {
