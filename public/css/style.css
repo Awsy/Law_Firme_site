@@ -92,7 +92,7 @@ img {
 
 .right_down a{
 
-    color: #4ff8f8;
+    color: #11f3f8;
 }
 
 .nav {
@@ -185,8 +185,10 @@ img {
 
 
 .slide_text{
-    color: #007774;
+    color: #cf12e5;
     font-family: "Arial Hebrew";
+    font-size: 20px;
+    margin-top: 50px;
 }
 
 /*----*/
@@ -208,6 +210,7 @@ img {
     padding: 10px;
     background-color: #1de9b6;
     box-shadow: 2px 2px 3px 2px lightyellow;
+    color: #6a6a6a;
 }
 .effect {
     height:130px;
@@ -217,11 +220,11 @@ img {
     width: 100%;
     height: 200px;
     border: 1px solid;
-    background-color: #880e4f;
-    color: whitesmoke;
+    background-color: #1ed7d6;
+    color: #5a5353;
     text-align: center;
     font-size: 20px;
-    font-family: SansSerif;
+    font-family: cursive;
 }
 
 .press {
@@ -241,7 +244,7 @@ img {
 }
 
 #faq_body {
-    background-color: oldlace;
+    background-color: #65fdca;
 }
 
 .container_faq {
@@ -257,12 +260,14 @@ img {
 
 .about_text {
     min-height: 450px;
-    color: rgba(29, 138, 183, 0.95);
+    color: rgba(115, 194, 244, 0.95);
+    font-family: "Al Tarikh";
 }
 
 .about_title {
     text-align: center;
     color: #289579;
+    box-shadow: 2px 1px 5px 6px #87ff8b;
 }
 
 
